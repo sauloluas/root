@@ -79,6 +79,10 @@
       <a name="bit18" val="1"/>
       <a name="bit19" val="1"/>
       <a name="bit2" val="0"/>
+      <a name="bit20" val="1"/>
+      <a name="bit21" val="1"/>
+      <a name="bit22" val="1"/>
+      <a name="bit23" val="1"/>
       <a name="bit3" val="0"/>
       <a name="bit4" val="0"/>
       <a name="bit5" val="0"/>
@@ -86,7 +90,7 @@
       <a name="bit7" val="0"/>
       <a name="bit8" val="0"/>
       <a name="bit9" val="0"/>
-      <a name="incoming" val="20"/>
+      <a name="incoming" val="24"/>
     </comp>
     <comp lib="0" loc="(580,260)" name="Tunnel">
       <a name="facing" val="north"/>
@@ -134,7 +138,6 @@
     <wire from="(300,150)" to="(300,230)"/>
     <wire from="(490,350)" to="(540,350)"/>
     <wire from="(560,210)" to="(560,330)"/>
-    <wire from="(560,210)" to="(620,210)"/>
     <wire from="(560,340)" to="(580,340)"/>
     <wire from="(580,230)" to="(580,260)"/>
     <wire from="(580,230)" to="(620,230)"/>
@@ -175,15 +178,7 @@
     <comp lib="0" loc="(180,90)" name="Pin">
       <a name="appearance" val="NewPins"/>
       <a name="label" val="Opcode"/>
-      <a name="width" val="4"/>
-    </comp>
-    <comp lib="0" loc="(210,40)" name="Splitter">
-      <a name="facing" val="south"/>
-      <a name="fanout" val="4"/>
-      <a name="incoming" val="4"/>
-    </comp>
-    <comp lib="0" loc="(290,60)" name="Constant">
-      <a name="facing" val="south"/>
+      <a name="width" val="8"/>
     </comp>
     <comp lib="0" loc="(470,120)" name="Pin">
       <a name="appearance" val="NewPins"/>
@@ -197,20 +192,10 @@
       <a name="label" val="Load"/>
       <a name="output" val="true"/>
     </comp>
-    <comp lib="1" loc="(340,90)" name="NOT Gate"/>
     <wire from="(180,90)" to="(190,90)"/>
     <wire from="(190,40)" to="(190,90)"/>
     <wire from="(190,40)" to="(210,40)"/>
-    <wire from="(250,60)" to="(250,90)"/>
-    <wire from="(250,90)" to="(310,90)"/>
-    <wire from="(290,300)" to="(450,300)"/>
-    <wire from="(290,60)" to="(290,300)"/>
-    <wire from="(340,90)" to="(380,90)"/>
-    <wire from="(380,250)" to="(440,250)"/>
-    <wire from="(380,90)" to="(380,250)"/>
-    <wire from="(440,90)" to="(440,250)"/>
     <wire from="(440,90)" to="(470,90)"/>
-    <wire from="(450,120)" to="(450,300)"/>
     <wire from="(450,120)" to="(470,120)"/>
   </circuit>
   <circuit name="DataPath">
@@ -279,7 +264,7 @@
       <a name="width" val="8"/>
     </comp>
     <comp lib="2" loc="(310,130)" name="Multiplexer">
-      <a name="width" val="8"/>
+      <a name="width" val="16"/>
     </comp>
     <comp lib="2" loc="(510,380)" name="Multiplexer">
       <a name="width" val="8"/>
@@ -287,7 +272,7 @@
     <comp lib="4" loc="(390,370)" name="Register">
       <a name="appearance" val="classic"/>
     </comp>
-    <comp loc="(390,520)" name="ULA"/>
+    <comp loc="(120,500)" name="ULA"/>
     <wire from="(170,110)" to="(260,110)"/>
     <wire from="(170,420)" to="(370,420)"/>
     <wire from="(210,270)" to="(240,270)"/>
