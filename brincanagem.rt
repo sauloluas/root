@@ -1,3 +1,4 @@
+my_function
 0h is 3
 reg keeps 0h
 1h stores reg
@@ -10,4 +11,8 @@ not cell
 
 
 
+my_function :0 1h
+my_function :- 1h
+my_function :^ 1h
+my_function 
 

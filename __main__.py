@@ -10,4 +10,4 @@ if __name__ == '__main__':
 
     # bintosim(binaries, romfile)
    
-   # py . brincanagem.rt
+    # py . brincanagem.rt
