@@ -1,3 +1,6 @@
 ~$documentation.xlsx
 __pycache__/
+.idea
+.~lock*
+*.circ.autosave
 
