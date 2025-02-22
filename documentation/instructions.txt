@@ -1,0 +1,22 @@
+Instruction	Symbol	Usage					Famcode	Opcode	Typecode	Hexa		Description			
+No Operation	-	-					00	000	000	0					
+Halt	.	.					00	001	000	8					
+Blink	@	@ label					00	010	000	10					
+When Zero	?zero	label ?zero flare					00	011	000	18					
+When Negative	?neg	label ?zero neg					00	100	000	20					
+Shoot	>	> [subroutine]					00	101	000	28					
+Back	<	<					00	110	000	30					
+Load	loads	reg loads X					01	000	000	40					registrador e imediato
+Keep	keeps	reg keeps B					01	000	001	41					registrador e registrador
+Store	stores	A stores reg					01	000	010	42					registrador e endereço
+Copy	copies	reg copies reg					01	000	011	43					endereço e registrador
+Is	is	A is X					01	000	100	44					endereço e imediato
+Addition	+	reg + X	reg + reg	reg + B	A + reg	A + X	10	000	0..4	80	84				
+Subtraction	-	reg - X	reg - reg	reg - B	A - reg	A - X	10	001	0..4	88	8C				
+Multiplication	*	reg * X	reg * reg	reg * B	A * reg	A * X	10	010	0..4	90	94				
+Division	/	reg / X	reg / reg	reg / B	A / reg	A / X	10	011	0..4	98	9C				
+Modulo	%	reg % X	reg % reg	reg % B	A % reg	A % X	10	100	0..4	A0	A4				
+Not	!	not reg	not A				11	000	0..1	C0	C1				
+And	&	reg and X	reg and reg	reg and B	A and reg	A and X	11	001	0..4	C8	CC				
+Or	|	reg or X	reg or reg	reg or B	A or reg	A or X	11	010	0..4	D0	D4				
+Xor	^	reg xor B	reg xor reg	reg xor B	A xor reg	A xor X	11	011	0..4	D8	DC				

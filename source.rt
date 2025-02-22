@@ -1,0 +1,11 @@
+0h is 3
+reg keeps 0h
+1h stores reg
+regB copies reg
+1h store:sums reg
+cell keeps 1h
+2h stores cell
+2h store:mults reg
+keep:not cell
+.
+
