@@ -1,63 +1,63 @@
-Full Name	Type	Name	Usage	Dec		
-No Operation		nop	nop	0		
-Halt		halt	halt	1		
-Blink		blnk	blnk label	2		
-When Zero		whz	whz flare label	3		
-When Negative		whng	whng flare label	4		
-Load	loading	load	load reg X	5		
-Keep	keeping	keep	keep reg B	6		
-Store	storing	str	str A reg	7		
-Addition	keeping	add	k.add reg B	8		
-Not	keeping	not	not reg	9		
-And	keeping	and	k.and reg B	10		
-						
-						
-----------PLANNED-------------						
-Shift Left						
-Shift Right						
-Fetch						
-Or	keeping	or	k.or reg B	11		
-Xor	keeping	xor	k.xor reg B	12		
-Subtraction	keeping	sub	k.sub reg B	9		
-Multiplication	keeping	mult	k.mult reg B	10		
-Division	keeping	div	k.div reg B	11		
-Modulo	keeping	mod	k.mod reg B	12		
-						
-Addition	loading	add	l.add reg X			
-Addition	storing	add	s.add A reg	10		
-Subtraction	loading	sub	l.sub reg X	11		
-Subtraction	storing	sub	s.sub A reg	13		
-Multiplication	loading	mult	l.mult reg X	14		
-Multiplication	storing	mult	s.mult A reg	16		
-Division	loading	div	l.div reg X	17		
-Division	storing	div	s.div A reg	19		
-Modulo	loading	mod	l.mod reg X	20		
-Modulo	storing	mod	s.mod A reg	22		
-And	loading	and	l.and reg X	24		
-And	storing	and	s.and A reg	26		
-Or	loading	or	l.or reg X	27		
-Or	storing	or	s.or A reg	29		
-Xor	loading	xor	l.xor reg X	30		
-Xor	storing	xor	s.xor A reg	32		
-						
-Shoot		sht	> [subroutine]			
-Back		back	<			
-Copy	copying	copy	copy reg1 reg2			
-Assign	assigning	asn	asn A X			
-Addition	copying	add	c.add reg1 reg2			
-Addition	assigning	add	a.add A X			
-Subtraction	copying	sub	c.sub reg1 reg3			
-Subtraction	assigning	sub	a.sub A X			
-Multiplication	copying	mult	c.mult reg1 reg4			
-Multiplication	assigning	mult	a.mult A X			
-Division	copying	div	c.div reg1 reg3			
-Division	assigning	div	a.div A X			
-Modulo	copying	mod	c.mod reg1 reg4			
-Modulo	assigning	mod	a.mod A X			
-Not	assigning	not	not A			
-And	copying	and	c.and reg1 reg4			
-And	assigning	and	a.and A X			
-Or	copying	or	c.or reg1 reg5			
-Or	assigning	or	a.or A X			
-Xor	copying	xor	c.xor reg1 reg6			
-Xor	assigning	xor	a.xor A X			
+Full Name	Type	Name	Usage	Dec
+No Operation		nop	nop	0
+Halt		halt	halt	1
+Blink		blnk	blnk label	2
+When Zero		wz	whz flare label	3
+When Negative		wn	whng flare label	4
+Load	loading	load	load reg X	5
+Keep	keeping	keep	keep reg B	6
+Store	storing	str	str A reg	7
+Addition	keeping	add	k.add reg B	8
+Not	keeping	not	not reg	9
+And	keeping	and	k.and reg B	10
+				
+				
+----------PLANNED-------------				
+Shift Left				
+Shift Right				
+Fetch				
+Or	keeping	or	k.or reg B	11
+Xor	keeping	xor	k.xor reg B	12
+Subtraction	keeping	sub	k.sub reg B	9
+Multiplication	keeping	mult	k.mult reg B	10
+Division	keeping	div	k.div reg B	11
+Modulo	keeping	mod	k.mod reg B	12
+				
+Addition	loading	add	l.add reg X	
+Addition	storing	add	s.add A reg	10
+Subtraction	loading	sub	l.sub reg X	11
+Subtraction	storing	sub	s.sub A reg	13
+Multiplication	loading	mult	l.mult reg X	14
+Multiplication	storing	mult	s.mult A reg	16
+Division	loading	div	l.div reg X	17
+Division	storing	div	s.div A reg	19
+Modulo	loading	mod	l.mod reg X	20
+Modulo	storing	mod	s.mod A reg	22
+And	loading	and	l.and reg X	24
+And	storing	and	s.and A reg	26
+Or	loading	or	l.or reg X	27
+Or	storing	or	s.or A reg	29
+Xor	loading	xor	l.xor reg X	30
+Xor	storing	xor	s.xor A reg	32
+				
+Shoot		sht	> [subroutine]	
+Back		back	<	
+Copy	copying	copy	copy reg1 reg2	
+Assign	assigning	asn	asn A X	
+Addition	copying	add	c.add reg1 reg2	
+Addition	assigning	add	a.add A X	
+Subtraction	copying	sub	c.sub reg1 reg3	
+Subtraction	assigning	sub	a.sub A X	
+Multiplication	copying	mult	c.mult reg1 reg4	
+Multiplication	assigning	mult	a.mult A X	
+Division	copying	div	c.div reg1 reg3	
+Division	assigning	div	a.div A X	
+Modulo	copying	mod	c.mod reg1 reg4	
+Modulo	assigning	mod	a.mod A X	
+Not	assigning	not	not A	
+And	copying	and	c.and reg1 reg4	
+And	assigning	and	a.and A X	
+Or	copying	or	c.or reg1 reg5	
+Or	assigning	or	a.or A X	
+Xor	copying	xor	c.xor reg1 reg6	
+Xor	assigning	xor	a.xor A X	

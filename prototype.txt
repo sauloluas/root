@@ -1,0 +1,23 @@
+
+/// let byte x = 10
+init	Acc		10
+
+/// let byte y = 3
+init	Bacc	3
+
+/// ley byte z = x + y
+copy	Carr	Acc
+adcp	Carr	Bacc
+
+/// storing values
+str	 	x		Acc
+str 	y		Bacc
+str 	z		Carr
+
+03000A
+030103
+080200
+090201
+050000
+050101
+050202
