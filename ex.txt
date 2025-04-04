@@ -1,0 +1,149 @@
+main.rt
+let int(8) a = 3;
+let int(8) b = -2;
+let int(8) z;
+
+if (a + b) == 0 {
+	z = 1;
+} else {
+	z = 2;
+}
+
+
+main.ors
+/// inputs a e b
+!a: 0h
+!b: 1h
+!z: 2h
+
+init	Acc	3
+init	Bacc	254
+copy	Carr	Acc
+adcp	Carr	Bacc
+wz	Carr	then
+/// else case
+init	Datt	2
+lp		endif
+!then.
+init	Datt	1
+!endif.
+str	a	Acc
+str	b	Bacc
+str	z	Datt
+
+
+main.rsm
+init	Acc	3
+init	Bacc	254
+copy	Carr	Acc
+adcp	Carr	Bacc
+wz	Carr	7
+init	Datt	2
+lp		8
+init	Datt	1
+str	0h	Acc
+str	1h	Bacc
+str	2h	Datt
+
+main.brx
+050003
+0501FE
+0A0200
+0B0201
+030207
+050302
+020008
+050301
+070000
+070101
+070203
+
+
+
+
+
+
+
+
+main.rt
+let int(8) a = 3;
+let int(8) b = 4;
+let int(8) z = 0;
+
+let int(8) aux = a;
+
+while aux != 0 {
+	z += b;
+	aux -= 1;
+}
+
+
+main.ors
+!a: 0h
+!b: 1h
+!z: 2h
+!aux: 3h
+
+/// iniciando vars
+init	Acc	3
+init	Bacc	4
+init	Carr	0
+copy	Datt	Acc
+init	Extt	-1
+
+/// while aux != 0
+!while.
+wz	Datt	endwhile
+adcp	Carr	Bacc
+adcp	Datt	Extt
+lp		while
+!endwhile.
+
+str	a	Acc
+str	b	Bacc
+str	z	Carr
+str	aux	Datt
+
+
+main.rsm
+init	Acc	3
+init	Bacc	4
+init	Carr	0
+copy	Datt	Acc
+init	Extt	255
+wz	Datt	9
+adcp	Carr	Bacc
+adcp	Datt	Extt
+lp		5
+str	0h	Acc
+str	1h	Bacc
+str	2h	Carr
+str	3h	Datt
+
+
+main.brx
+050003
+050104
+050200
+0a0300
+0504ff
+030309
+0b0201
+0b0304
+020005
+070000
+070101
+070202
+070303
+
+
+
+
+
+
+
+
+
+
+
+

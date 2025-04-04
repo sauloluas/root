@@ -1,15 +1,24 @@
 Full Name	Type	Name	Usage	Dec
-No Operation		nop	nop	0
-Halt		halt	halt	1
-Blink		blnk	blnk label	2
-When Zero		wz	whz flare label	3
-When Negative		wn	whng flare label	4
-Load	loading	load	load reg X	5
-Keep	keeping	keep	keep reg B	6
+No Operation	operative	nop	nop	0
+Halt	operative	halt	halt	1
+Leap	flow	lp	lp label	2
+When Zero	flow	wz	whz reg label	3
+When Negative	flow	wn	whng flare label	4
+Init	initing	init	init reg X	5
+Load	loading	load	load reg B	6
 Store	storing	str	str A reg	7
-Addition	keeping	add	k.add reg B	8
-Not	keeping	not	not reg	9
-And	keeping	and	k.and reg B	10
+Not	copying	not	not reg	8
+And	loading	and	k.and reg B	9
+Copy	copying	copy	copy reg1 reg2	10
+Addition	copying	adcp	adcp reg1 reg2	11
+Addition	loading	adl	adl reg B	12
+				
+				
+				
+				
+				
+				
+				
 				
 				
 ----------PLANNED-------------				
